@@ -22,7 +22,7 @@ const InitialTest = () => {
       }
 
       try {
-        const response = await fetch("https://mainbackend-859c.onrender.com/update-course", {
+        const response = await fetch("https://mainbackend.up.railway.app//update-course", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

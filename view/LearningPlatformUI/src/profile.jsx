@@ -27,7 +27,7 @@ const Profile = () => {
 
     const fetchProfile = async () => {
       try {
-        const response = await fetch("https://mainbackend-859c.onrender.com/profile", {
+        const response = await fetch("https://mainbackend.up.railway.app//profile", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -57,7 +57,7 @@ const Profile = () => {
 
     const fetchCourses = async () => {
       try {
-        const response = await axios.get("https://mainbackend-859c.onrender.com/courses", {
+        const response = await axios.get("https://mainbackend.up.railway.app//courses", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -86,7 +86,7 @@ const Profile = () => {
     setId((prevId) => (prevId < courses.length - 1 ? prevId + 1 : prevId));
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("https://mainbackend-859c.onrender.com/save-current-state", {
+      const response = await fetch("https://mainbackend.up.railway.app//save-current-state", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
